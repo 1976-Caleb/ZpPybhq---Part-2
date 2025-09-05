@@ -1,0 +1,69 @@
+body {
+  background-color: black;
+  background-image: linear-gradient(0deg, rgba(0,255,0,0.05) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(0,255,0,0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  color: white;
+}
+
+.container {
+  text-align: center;
+}
+
+
+.cd {
+  position: absolute;
+  left: -60px;
+  top: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ddd, #999 60%, #666);
+  border: 2px solid white;
+  box-shadow: 0 0 15px #fff inset, 0 0 10px blueviolet;
+  z-index: 1;
+  transition: left 3s ease-in-out;
+  animation: glowSpin 3s linear infinite;
+}
+
+.cd::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: black;
+  top: 20px;
+  left: 20px;
+}
+
+@keyframes glowSpin {
+  0% { transform: rotate(0deg); box-shadow: 0 0 15px blueviolet inset; }
+  50% { transform: rotate(180deg); box-shadow: 0 0 25px blueviolet inset; }
+  100% { transform: rotate(360deg); box-shadow: 0 0 15px blueviolet inset; }
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .cd {
+    top: 20px;
+    width: 25vw;
+    height: 25vw;
+  }
+
+  input {
+    width: 15vw;
+    height: 8vw;
+    font-size: 3.5vw;
+  }
+}

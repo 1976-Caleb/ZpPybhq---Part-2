@@ -1,0 +1,89 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #111;
+  border: 1px solid #444;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.puzzle {
+  font-size: 1.1em;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+}
+
+button {
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 100px;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  background: #000;
+  border: 1px solid #444;
+  color: white;
+  font-family: monospace;
+  border-radius: 4px;
+  text-align: center;
+}
+
+
+
+.glyph {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .cd {
+    top: 20px;
+    width: 25vw;
+    height: 25vw;
+  }
+
+  input {
+    width: 15vw;
+    height: 8vw;
+    font-size: 3.5vw;
+  }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level 2</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="level2.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Level 2 - Steganography</h2>
+    <p>A picture might speak volumes, but sometimes it only reveals a single truth.</p>
+    <p>Appearances can be deceiving. By the way, when was he born?</p>
+    <!-- Hidden clue is in this image link -->
+    <a href="https://www.instagram.com/YOUR_INSTAGRAM_ACCOUNT" target="_blank">
+      <img src="pic.png" alt="Look closely..." width="300">
+    </a>
+
+    <form id="puzzleForm">
+      <input type="text" id="answer" placeholder="....." required autocomplete="off">
+      <button type="submit">Submit</button>
+    </form>
+    <p id="feedback"></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  background: #000;
+  border: 1px solid #444;
+  color: white;
+  font-family: monospace;
+  border-radius: 4px;
+  text-align: center;
+}
+
+#gameCanvas {
+  border: 2px solid white;
+  background-color: black;
+  display: block;
+  margin: 50px auto;
+}
+
+#proceedBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: lime;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+
+#gameContainer {
+  text-align: center;
+  position: relative;
+  touch-action: none;            /* important for disabling scroll gestures on touch */
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#gameCanvas {
+  display: block;
+  margin: 0 auto;
+  background: black;
+  border: 2px solid white;
+  touch-action: none;            /* ensure canvas doesn't allow default touch behavior */
+}
+
+#jumpBtn {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 14px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background: crimson;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  z-index: 20;                   /* keep button on top of the canvas */
+  touch-action: manipulation;    /* allow button taps */
+}
+
+#jumpBtn:active { background: darkred; }
+#scoreDisplay { color: white; font-family: monospace; margin-top: 10px; }
